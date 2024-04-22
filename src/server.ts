@@ -5,7 +5,8 @@ import cors from "cors";
 const app = express();
 
 // Specify the port number for the server
-const PORT = process.env.PORT || 3002;
+//const PORT = process.env.PORT || 3002;
+const PORT = __filename.endsWith(".ts") ? 3003 : 3001;
 
 app.use(cors({ origin: "http://localhost:3000" }));
 
