@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "no-var-keyword": true,
+    "semicolon": [true, "always"],
+    "no-unnecessary-type-assertion": true,
+    "align": [true, "parameters", "arguments", "statements"]
+  }
+}

@@ -1,16 +1,13 @@
-import express, { Request, Response } from "express";
-import cors from "cors";
+import { Request, Response } from 'express';
+import { app } from './config.ts';
+import cors from 'cors';
+import { PORT } from './config.ts';
 
-const app = express();
+app.use(cors({ origin: 'http://localhost:3000' }));
 
-//const PORT = __filename.endsWith(".ts") ? 3003 : 3001;
-const PORT = process.env.PORT || 3001;
-
-app.use(cors({ origin: "http://localhost:3000" }));
-
-app.get("/", (req: Request, res: Response) => {
+app.get('/', (req: Request, res: Response) => {
   // Send a response to the client front end
-  res.send({ message: "Hello from server!" });
+  res.send({ message: 'Hello from server!' });
 });
 
 const server = app.listen(PORT, () => {

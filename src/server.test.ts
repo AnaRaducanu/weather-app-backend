@@ -15,13 +15,10 @@ describe("GET /", () => {
       expect(response.body).toEqual({ message: "Hello from server!" });
     } catch (error: any) {
       if (error.response) {
-        // The server responded with a status code outside of 2xx
         console.error("Server responded with an error:", error.response.status);
       } else if (error.request) {
-        // The request was made but no response was received
         console.error("No response received from the server");
       } else {
-        // Other errors
         console.error("An error occurred:", error.message);
       }
     }
