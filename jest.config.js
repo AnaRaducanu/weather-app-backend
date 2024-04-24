@@ -5,6 +5,7 @@ const config = {
     "^.+\\.jsx?$": "babel-jest",
   },
   extensionsToTreatAsEsm: [".ts"],
+  testPathIgnorePatterns: ["dist/"],
   coverageThreshold: {
     global: {
       branches: 85,

@@ -10,6 +10,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 import request from "supertest";
 import app from "./server";
 describe("GET /", () => {
+    afterAll(() => {
+        app.close();
+    });
     it("responds with JSON message 'Hello from server!'", () => __awaiter(void 0, void 0, void 0, function* () {
         const response = yield request(app).get("/");
         expect(response.status).toBe(200);
