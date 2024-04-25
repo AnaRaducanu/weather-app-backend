@@ -35,3 +35,8 @@ jobs:
           npx gh-pages -d dist -u "github-actions-bot <support+actions@github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          permissions:
+          actions: read
+          pages: write
+          contents: read
+          id-token: write
