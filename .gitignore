@@ -131,3 +131,6 @@ dist
 
 # SonarQube scannerwork directory
 .scannerwork/
+
+# Coverage report
+coverage
