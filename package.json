@@ -20,7 +20,7 @@
       "eslint --quiet --fix",
       "prettier --write --ignore-unknown"
     ],
-    "*.{json}": [
+    "*.json": [
       "prettier --write --ignore-unknown"
     ]
   },
