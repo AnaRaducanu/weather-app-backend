@@ -17,8 +17,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "eslint --quiet --fix",
-      "prettier --write --ignore-unknown"
+      "prettier --write --ignore-unknown",
+      "eslint --quiet --fix"
     ],
     "*.json": [
       "prettier --write --ignore-unknown"
@@ -44,6 +44,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
+    "eslint-plugin-jest": "^28.3.0",
     "express": "^4.19.2",
     "nodemon": "^3.1.0",
     "ts-node": "^10.9.2"
